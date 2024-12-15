@@ -19,17 +19,17 @@ This project predicts nightly prices for Airbnb listings in Los Angeles using ma
 
 ### 1. **Data Preprocessing**:  
 - **Missing Values**:  
-  - Imputed numerical values with the median.  
-  - Filled categorical missing values with the mode.  
+  - Imputed numerical values with BaysianRidge Iterative Imputer.  
+  - Filled categorical missing values with a new category called "Missing"
 - **Feature Scaling**:  
-  - Applied standard scaling to continuous features.  
-  - One-hot encoded categorical features for compatibility with machine learning models.  
-- **Outlier Handling**:  
-  - Excluded listings with extreme `price` values (e.g., >$1,000) for better model performance.
+  - Applied standard and min max scaling to continuous features.  
+  - One-hot encoded categorical features.  
 
 ### 2. **Data Splitting**:  
 - **Train/Test Split**:  
-  - Used **GroupShuffleSplit** to ensure integrity of neighborhood-based groupings (`neighbourhood_cleansed`) across splits.  
+  - Non IID dataset
+  - Used **GroupShuffleSplit** and **GroupKfold** to ensure integrity of geographical groupings across splits.
+  - Used KNN clustering to define geographical groupings  
   - Split ratio: 80% train, 20% test.  
 
 ### 3. **Modeling**:  
@@ -38,7 +38,7 @@ This project predicts nightly prices for Airbnb listings in Los Angeles using ma
 - **Hyperparameter Tuning**:  
   - Conducted grid search with cross-validation for optimal hyperparameters.  
 - **Evaluation Metric**:  
-  - Used **R² Score** and **Root Mean Squared Error (RMSE)** for model evaluation.  
+  - Used **R² Score** for model evaluation.  
 
 ### 4. **Feature Importance**:  
 - Analyzed feature contributions using:  
@@ -51,7 +51,7 @@ This project predicts nightly prices for Airbnb listings in Los Angeles using ma
 
 ### Key Findings:  
 1. **Best Model**:  
-   - XGBoost achieved the highest R² score of **0.85** on the test set.  
+   - XGBoost achieved the highest R² score of **~0.75** on the test set.  
 2. **Top Predictive Features**:  
    - Reviews (`number_of_reviews`, `review_scores_rating`).  
    - Amenities (e.g., `amenity_count`).  
@@ -66,9 +66,7 @@ Generated figures are available in the `/figures` directory, including feature i
 ## **Repository Structure**  
 ```plaintext
 .
-├── data/                  # Raw and preprocessed data
 ├── figures/               # Generated plots and visualizations
-├── results/               # Model predictions and evaluation results
 ├── report/                # Final project report (PDF and LaTeX files)
 ├── src/                   # Source code and Jupyter notebooks
 ├── .gitignore             # Files and directories to ignore in version control
