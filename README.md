@@ -63,8 +63,6 @@ An LA Airbnb Pricing dataset was web scraped from the Airbnb website for propert
 ### Visuals:  
 Generated figures are available in the `/figures` directory, including feature importance plots, model performance comparisons, and SHAP value visualizations.
 
----
-
 ## Dependencies
 
 The following Python libraries are required to run this project:
@@ -100,7 +98,6 @@ The following Python libraries are required to run this project:
 
 Install the dependencies using `pip`:
 
-```bash
 pip install pandas numpy matplotlib seaborn scikit-learn xgboost folium shap
 
 ## **Repository Structure**  
