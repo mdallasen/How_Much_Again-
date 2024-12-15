@@ -60,6 +60,8 @@ An LA Airbnb Pricing dataset was web scraped from the Airbnb website for propert
    - Property types (`property_type`).  
    - Availability metrics (`availability_30`, `availability_365`).  
 
+---
+
 ### Visuals:  
 Generated figures are available in the `/figures` directory, including feature importance plots, model performance comparisons, and SHAP value visualizations.
 
