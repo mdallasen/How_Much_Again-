@@ -3,7 +3,7 @@
 ## **Overview**  
 Airbnb hosts continually face the challenge of accurately pricing their listings in line with property and location characteristics. Achieving a representative price remains a difficult task, yet doing so will prevent lost earnings from mispricing and improve the customer experience. To determine what an “appropriate” price is for an Airbnb listing, this report will aim to provide a price per night prediction based on several property, review, and market characteristics.
 
-An LA Airbnb Pricing dataset was web scraped from the Airbnb website for property listings [1], providing ~44,000 property listings with over 70+ pricing, market, property, and review features. The target variable selected from this dataset was price per night, which ranged from 6 to 99999 with an average price of 317.20. Due to the nature of how the data was acquired, there were several issues that needed to be solved prior to model development. Namely, over 45% of property listings contained missing values with various imbalanced and skewed features. 
+An LA Airbnb Pricing dataset was web scraped from the Airbnb website for property listings, providing ~44,000 property listings with over 70+ pricing, market, property, and review features. The target variable selected from this dataset was price per night, which ranged from 6 to 99999 with an average price of 317.20. Due to the nature of how the data was acquired, there were several issues that needed to be solved prior to model development. Namely, over 45% of property listings contained missing values with various imbalanced and skewed features. 
 
 ---
 
