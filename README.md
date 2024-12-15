@@ -65,6 +65,44 @@ Generated figures are available in the `/figures` directory, including feature i
 
 ---
 
+## Dependencies
+
+The following Python libraries are required to run this project:
+
+- **Core Libraries**:
+  - `pandas`: Data manipulation and analysis
+  - `numpy`: Numerical computing
+  - `matplotlib`: Visualization
+  - `seaborn`: Statistical data visualization
+  - `warnings`: Warning control
+
+- **Scikit-learn**:
+  - `Pipeline`, `ColumnTransformer`: Building machine learning pipelines
+  - `SimpleImputer`, `IterativeImputer`: Handling missing values
+  - `StandardScaler`, `MinMaxScaler`, `OneHotEncoder`, `MultiLabelBinarizer`: Data preprocessing
+  - `train_test_split`, `GroupKFold`, `GroupShuffleSplit`, `GridSearchCV`: Data splitting and hyperparameter tuning
+  - `shuffle`: Random shuffling
+  - `KMeans`: Clustering
+  - `r2_score`, `mean_squared_error`: Metrics for regression
+  - `Ridge`, `RandomForestRegressor`, `DecisionTreeRegressor`: Machine learning models
+  - `permutation_importance`: Feature importance analysis
+
+- **XGBoost**:
+  - `XGBRegressor`: Gradient boosting model
+
+- **Geospatial Analysis**:
+  - `folium`: Geospatial visualization
+
+- **Model Interpretability**:
+  - `shap`: Model explainability
+
+### Installation
+
+Install the dependencies using `pip`:
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn xgboost folium shap
+
 ## **Repository Structure**  
 ```plaintext
 .
@@ -73,3 +111,4 @@ Generated figures are available in the `/figures` directory, including feature i
 ├── src/                   # Source code and Jupyter notebooks
 ├── LICENSE                # License for the repository
 └── README.md              # Project overview and instructions
+
