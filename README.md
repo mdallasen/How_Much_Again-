@@ -100,6 +100,8 @@ Install the dependencies using `pip`:
 
 pip install pandas numpy matplotlib seaborn scikit-learn xgboost folium shap
 
+---
+
 ## **Repository Structure**  
 ```plaintext
 .
