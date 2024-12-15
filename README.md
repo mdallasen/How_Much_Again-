@@ -71,6 +71,5 @@ Generated figures are available in the `/figures` directory, including feature i
 ├── figures/               # Generated plots and visualizations
 ├── report/                # Final project report (PDF and LaTeX files)
 ├── src/                   # Source code and Jupyter notebooks
-├── .gitignore             # Files and directories to ignore in version control
 ├── LICENSE                # License for the repository
 └── README.md              # Project overview and instructions
