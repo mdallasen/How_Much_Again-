@@ -1,4 +1,4 @@
-# **Airbnb LA Pricing**
+# **How Much Again?!: Price Optimization for Airbnb **
 
 ## **Overview**  
 Airbnb hosts continually face the challenge of accurately pricing their listings in line with property and location characteristics. Achieving a representative price remains a difficult task, yet doing so will prevent lost earnings from mispricing and improve the customer experience. To determine what an “appropriate” price is for an Airbnb listing, this report will aim to provide a price per night prediction based on several property, review, and market characteristics.
